@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const analyzeRoutes = require("./routes/analyze");
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 const MONGO_URI = process.env.MONGO_URI;
 
 app.use(cors());

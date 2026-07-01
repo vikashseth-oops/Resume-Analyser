@@ -1,9 +1,11 @@
-const API_URL = import.meta.env.VITE_API_URL;
 import { useEffect, useState } from "react";
 import IntakeForm from "./components/IntakeForm";
 import ScorePanel from "./components/ScorePanel";
 import SkillLedger from "./components/SkillLedger";
 import Roadmap from "./components/Roadmap";
+
+const API_URL = import.meta.env.VITE_API_URL;
+
 
 const FALLBACK_ROLES = [
   "Frontend Developer",
@@ -23,7 +25,7 @@ export default function App() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch(`{API_URL}/api/roles`)
+    fetch(`${API_URL}/api/roles`)
       .then((r) => r.json())
       .then((d) => d.roles?.length && setRoles(d.roles))
       .catch(() => { });

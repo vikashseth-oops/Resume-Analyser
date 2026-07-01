@@ -1,3 +1,4 @@
+const API_URL = import.meta.env.VITE_API_URL;
 import { useEffect, useState } from "react";
 import IntakeForm from "./components/IntakeForm";
 import ScorePanel from "./components/ScorePanel";
@@ -22,10 +23,10 @@ export default function App() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch("/api/roles")
+    fetch(`{API_URL}/api/roles`)
       .then((r) => r.json())
       .then((d) => d.roles?.length && setRoles(d.roles))
-      .catch(() => {});
+      .catch(() => { });
   }, []);
 
   async function handleSubmit(file, role) {
@@ -37,7 +38,10 @@ export default function App() {
       formData.append("resume", file);
       formData.append("targetRole", role);
 
-      const res = await fetch("/api/analyze", { method: "POST", body: formData });
+      const res = await fetch(`${API_URL}/api/analyze`, {
+        method: "POST",
+        body: formData,
+      });
       const data = await res.json();
 
       if (!res.ok) throw new Error(data.error || "Analysis failed");

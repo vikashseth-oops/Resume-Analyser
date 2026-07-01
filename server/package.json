@@ -1,0 +1,23 @@
+{
+  "name": "resume-analyzer-server",
+  "version": "1.0.0",
+  "description": "AI-Powered Resume Analyzer & Skill Gap Recommendation System - Backend",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "npx nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.5.0", 
+    "cors": "^2.8.5",
+    "multer": "^1.4.5-lts.1",
+    "pdf-parse": "^1.1.1",
+    "mammoth": "^1.7.2",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

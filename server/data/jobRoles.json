@@ -1,0 +1,42 @@
+{
+  "Frontend Developer": {
+    "core": ["html", "css", "javascript", "react", "responsive design", "git", "rest api"],
+    "intermediate": ["typescript", "redux", "webpack", "sass", "next.js", "testing", "jest", "tailwind css", "accessibility"],
+    "advanced": ["performance optimization", "micro frontends", "ssr", "graphql", "ci/cd", "web vitals"]
+  },
+  "Backend Developer": {
+    "core": ["node.js", "express", "rest api", "sql", "mongodb", "git", "authentication"],
+    "intermediate": ["docker", "redis", "microservices", "graphql", "unit testing", "ci/cd", "message queues", "jwt"],
+    "advanced": ["kubernetes", "system design", "load balancing", "caching strategies", "event-driven architecture", "aws"]
+  },
+  "Full Stack Developer": {
+    "core": ["html", "css", "javascript", "react", "node.js", "express", "mongodb", "rest api", "git"],
+    "intermediate": ["typescript", "redux", "docker", "sql", "testing", "ci/cd", "authentication", "graphql"],
+    "advanced": ["microservices", "system design", "kubernetes", "aws", "performance optimization", "websockets"]
+  },
+  "Data Analyst": {
+    "core": ["sql", "excel", "python", "data visualization", "statistics", "tableau"],
+    "intermediate": ["power bi", "pandas", "numpy", "data cleaning", "etl", "a/b testing"],
+    "advanced": ["machine learning", "predictive modeling", "big data", "spark", "data warehousing"]
+  },
+  "Data Scientist": {
+    "core": ["python", "sql", "statistics", "machine learning", "pandas", "numpy"],
+    "intermediate": ["scikit-learn", "data visualization", "feature engineering", "deep learning", "nlp"],
+    "advanced": ["tensorflow", "pytorch", "mlops", "big data", "spark", "model deployment"]
+  },
+  "DevOps Engineer": {
+    "core": ["linux", "git", "docker", "ci/cd", "bash scripting", "cloud computing"],
+    "intermediate": ["kubernetes", "aws", "terraform", "ansible", "monitoring", "jenkins"],
+    "advanced": ["infrastructure as code", "site reliability engineering", "service mesh", "security automation"]
+  },
+  "Mobile App Developer": {
+    "core": ["java", "kotlin", "swift", "react native", "rest api", "git"],
+    "intermediate": ["flutter", "firebase", "state management", "ui/ux design", "testing"],
+    "advanced": ["performance optimization", "ci/cd", "app store deployment", "native modules"]
+  },
+  "UI/UX Designer": {
+    "core": ["figma", "wireframing", "prototyping", "user research", "adobe xd"],
+    "intermediate": ["interaction design", "usability testing", "design systems", "accessibility"],
+    "advanced": ["design ops", "user psychology", "a/b testing", "motion design"]
+  }
+}

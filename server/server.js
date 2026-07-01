@@ -8,16 +8,17 @@ const analyzeRoutes = require("./routes/analyze");
 const app = express();
 const PORT = process.env.PORT || 3000;
 const MONGO_URI = process.env.MONGO_URI;
+app.use(cors());
 
-app.use(
-  cors({
-    origin: [
-      "http://localhost:5173", // Local development
-      process.env.FRONTEND_URL // Vercel URL
-    ],
-    credentials: true,
-  })
-);
+// app.use(
+  // cors({
+    // origin: [
+      // "http://localhost:5173", // Local development
+      // process.env.FRONTEND_URL // Vercel URL
+    // ],
+    // credentials: true,
+  // })
+// );
 app.use(express.json());
 
 
